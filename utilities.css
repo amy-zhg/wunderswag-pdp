@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "larsseitregular";
+  src: url("lhttps://cdn.glitch.global/935c1b3a-2d6f-42b5-aab8-2ea9c89cca70/larsseit-regular-webfont.woff2?v=1643101240972")
+      format("woff2"),
+    url("https://cdn.glitch.global/935c1b3a-2d6f-42b5-aab8-2ea9c89cca70/larsseit-regular-webfont.woff2?v=1643101240972")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "larsseitbold";
+  src: url("https://cdn.glitch.global/935c1b3a-2d6f-42b5-aab8-2ea9c89cca70/larsseit-bold-webfont.woff2?v=1643101225982")
+      format("woff2"),
+    url("https://cdn.glitch.global/935c1b3a-2d6f-42b5-aab8-2ea9c89cca70/larsseit-bold-webfont.woff2?v=1643101225982")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WunderBrick Text";
+  src: url("https://cdn.glitch.global/72d64529-259e-46bc-aad9-2e7a3ffefb7e/WunderBrick-Text.woff2?v=1647759024319")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --wknd-black: #191919;
+  --chili: #ff4133;
+  --peacock: #25b89d;
+  --blueberry: #3d55cc;
+  --canary: #ffbb00;
+  --denim: #303d78;
+  --latte: #cc9966;
+  --chino: #f5ebe1;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* adjust typography defaults */
+body {
+  font-family: "larsseitregular", sans-serif;
+  line-height: 1.5;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* images and videos max out at full width */
+img,
+video,
+picture,
+svg {
+  height: auto;
+  max-width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+img:hover,
+svg:hover {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+button {
+  border-radius: 35px;
+  background: var(--denim);
+  color: white;
+  width: 260px;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  font-family: "larsseitbold", sans-serif;
+  transition: all 0.3s ease-in-out 0s;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "WunderBrick Text", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+
+h2,
+h3 {
+  font-family: "larsseitbold", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out 0s;
+}
